@@ -1,7 +1,7 @@
 @CHARSET "ISO-8859-1";
 body {
 	background-repeat: no-repeat; 
-	background-image: url("../img/image2.jpg");
+	background-image: url("image2.jpg");
 	background-size: 100% 100%;
 	}
 h1 {
@@ -20,4 +20,3 @@ color: red;
 p {
     font-size: 14px;
 }
-;

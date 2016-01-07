@@ -5,26 +5,28 @@
 <p><b>This text is bold</b> </p>
 </title>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="../js/JSFunctions.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/pagestyles.css">
+<script type="text/javascript" src="JSFunctions.js"></script>
+<link rel="stylesheet" type="text/css" href="pagestyles.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 </body>
 </head>
 <body>
-<form name="form" method="post" onSubmit="return valid()" action="Details.html">
+<form name="form" method="post" onSubmit="return valid()" action="Page2.html">
 <h1> STUDENT INFORMATION SYSTEM </h1>
 <p title="About Student Portal">
 <h3> This student portal helps in entering new student Information and can retreive particular student Information based on student ID </h3>
 </p>
+<div style="margin:10px;">
 <div class="block">
     <label>Student Id No:</label>
     <input type="text" name="Id" />
 </div>
-<br>
+
 <div class="block">
     <label>First Name</label>
     <input type="text"  name="firstname"/>
 </div>
-<br>
+
 <div class="block">
     <label>Middle Name</label>
     <input type="text" name="middlename"/>
@@ -39,59 +41,63 @@
     <label> Suffix </label>
     <input type="text" name="suffix" />
 </div>
-<br>
-<div>
-<label>Gender</label>
-  <input type="radio" name="sex" value="male">Male
+
+<div class="block">
+<h4>Gender</h4>
+
+<input type="radio" name="sex" value="male">Male
+  
   <input type="radio" name="sex" value="female">Female
 </div>
-<br>
+
+
+<div id="date1" class="block datefield">
 <label for="day">Date of Birth </label>
-<div id="date1" class="datefield">
     <input id="day" type="tel" maxlength="2" placeholder="DD"/> /              
     <input id="month" type="tel" maxlength="2" placeholder="MM"/>/
     <input id="year" type="tel" maxlength="4" placeholder="YYYY"/>
 </div>
-<br>
+
 <div class="block">
     <label>Place of Birth</label>
     <input type="text" name="place"/>
 </div>
-<br>
+
 Civil Status
-<select>
+<select style="width:auto">
 <option value="Civil Status" selected>Status</option>
   <option value="Married">Married</option>
   <option value="Single">Single</option>
 </select>
-<br>
-<br>
+
+
 <div class="block">
     <label>Address </label>
     <input type="text" name="address"/>
 </div>
-<br>
+
 <div class="block">
     <label>City </label>
     <input type="text" name="city" />
 </div>
-<br>
+
 <div class="block">
     <label>State</label>
     <input type="text" name="state"/>
 </div>
-<br>
+
 <div class="block">
     <label>Zipcode</label>
     <input type="text" name="zip"/>
 </div>
-<br>
+
 <div class="block">
     <label>Country </label>
     <input type="text" name="country"/>
 </div>
-<br>
-<input type="submit" value="Submit"/>
+
+<input type="submit" value="Submit" class="btn btn-primary"/>
+</div>
 </form>
 </body>
 
